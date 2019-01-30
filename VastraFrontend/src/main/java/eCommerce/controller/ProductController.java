@@ -57,7 +57,7 @@ public class ProductController
 		m.addAttribute("pageinfo" , "Manage Product");
 		m.addAttribute("categoryList", this.getCategories());
 		
-		String imagepath = "C:\\Users\\Kamakshi\\eclipse-workspace\\VastraFrontend\\src\\main\\webapp\\resources\\images\\";
+		String imagepath = "C:\\Users\\Kamakshi\\Documents\\GitHub\\Project1\\VastraFrontend\\src\\main\\webapp\\resources\\images\\";
 		imagepath = imagepath+String.valueOf(product.getProductId())+ ".png";
 		
 		File image = new File(imagepath);
