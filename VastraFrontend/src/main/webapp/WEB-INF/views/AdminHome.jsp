@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html"%>
 <%@include file="Header.jsp" %>
 
-<h3></h3>
+<h3>Admin Home</h3>
 
 <div class="row">
   <c:forEach items = "${productList}" var="product" >
