@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import java.util.Date;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import eCommerce.DAO.OrderDAO;
@@ -26,7 +27,7 @@ public class OrderUnitTest
   public void saveOrderTest()
   {
 	OrderDetail orderDetail= new OrderDetail();
-	orderDetail.setOrderdate(new Date());
+	orderDetail.setOrderDate(new java.util.Date());
 	orderDetail.setCardID(100);
 	orderDetail.setShippingAddr("Mayur Vihar");
 	orderDetail.setTrans("cod");
@@ -34,6 +35,12 @@ public class OrderUnitTest
 	
 	assertTrue("Problem in Saving Order", orderDAO.saveOrder(orderDetail));
   }
+@Ignore
+@Test
+ public void updateCart()
+ {
+	assertTrue("Problm in Updating Cart",orderDAO.updateCart("Priya"));
+ }
 	
 	
 }

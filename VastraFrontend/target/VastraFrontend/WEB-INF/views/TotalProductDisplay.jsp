@@ -4,11 +4,11 @@
 
 <br> <br>
 
-<form action="<c:url value="/addToCart/${product.productId}" />" >
+<form action="<c:url value="/addToCart/${product.productId}" />"  method="post">
 <table class="table-bordered"> 
  <tr>
    <td rowspan="8"> 
-   <img src="<c:url value="/resources/images/${product.productId}.png"  />" height="300" alt = "Generic placeholder thumbnail">
+   <img src="<c:url value="/resources/images/${product.productId}.png" />" height="300" alt = "Generic placeholder thumbnail">
    </td>
    <td> Product Id </td>
    <td> ${product.productId}</td>

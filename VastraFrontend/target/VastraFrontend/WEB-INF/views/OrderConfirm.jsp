@@ -19,11 +19,11 @@
     
   <c:forEach items="${cartItemList}" var="cartItem">
        <tr class="info">
-         <td>${cartItem.productId}</td>
+         <td>${cartItem.productid}</td>
          <td>${cartItem.productName}</td>
          <td>${cartItem.quantity}</td>
          <td>${cartItem.price}</td>
-         <td>${cartItem.price} * ${cartItem.quantity}</td>  
+         <td>${cartItem.price * cartItem.quantity}</td>  
        </tr>
   </c:forEach>
   

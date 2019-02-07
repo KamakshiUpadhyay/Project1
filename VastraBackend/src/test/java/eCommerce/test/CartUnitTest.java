@@ -22,7 +22,7 @@ public class CartUnitTest
 			cartDAO = (CartDAO)context.getBean("cartDAO");
 		}
 		
-		@Ignore
+		
 		@Test
 		public void addCartItemTest() 
 		{
@@ -36,8 +36,9 @@ public class CartUnitTest
 			
 			assertTrue("Problem in adding into Cart",cartDAO.addCartItem(cartItem));
 	}
-		@Ignore
+		
 		@Test 
+		@Ignore
 		public void updateCartItemTest()
 		{
 			CartItem cartItem=cartDAO.getCartItem(5);
@@ -46,15 +47,16 @@ public class CartUnitTest
 			assertTrue("Problem in Updating the cart",cartDAO.updateCartItem(cartItem));
 		}
 		
-		@Ignore
+		
 		@Test
+		@Ignore
 		public void deleteCartItemTest()
 		{
 			CartItem cartItem=cartDAO.getCartItem(5);
 			assertTrue("Problem in Deleting the cart",cartDAO.deleteCartItem(cartItem));
 		}
 		
-		@Ignore
+		
 		@Test
 		public void displayCartItems()
 		  {

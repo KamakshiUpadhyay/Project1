@@ -24,7 +24,10 @@ public class Product
 	int stock;
 	int categoryId;
 	int supplierId;
+	String brandName;
 	
+	
+
 	@Transient
 	MultipartFile pimage;
 	
@@ -66,6 +69,15 @@ public class Product
 		this.productDesc = productDesc;
 	}
 	
+	
+	public String getBrandName() {
+		return brandName;
+	}
+
+	public void setBrandName(String brandName) {
+		this.brandName = brandName;
+	}
+
 	public int getPrice() 
 	{
 		return price;
@@ -105,5 +117,6 @@ public class Product
 	{
 		this.supplierId = supplierId;
 	}
+
 	
 }

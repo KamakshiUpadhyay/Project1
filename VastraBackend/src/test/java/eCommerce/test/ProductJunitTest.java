@@ -35,6 +35,7 @@ public class ProductJunitTest {
 		product.setStock(40);
 		product.setCategoryId(18);
 		product.setSupplierId(15);
+		product.setBrandName("UCB");
 		
 		assertTrue("Problem in adding Product", productDAO.addProduct(product));
 			

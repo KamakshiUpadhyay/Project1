@@ -58,7 +58,7 @@ public class ProductController
 		m.addAttribute("categoryList", this.getCategories());
 		
 		String imagepath = "C:\\Users\\Kamakshi\\Documents\\GitHub\\Project1\\VastraFrontend\\src\\main\\webapp\\resources\\images\\";
-		imagepath = imagepath+String.valueOf(product.getProductId())+ ".png";
+		imagepath = imagepath+String.valueOf(product.getProductId())+ ".png" ;
 		
 		File image = new File(imagepath);
 		
@@ -93,6 +93,10 @@ public class ProductController
 	@RequestMapping(value="/UpdateProduct" , method=RequestMethod.POST)
 	public String updateProduct(@ModelAttribute("product")Product product, Model m)
 	{
+		int  ProductId;
+		ProductId =product.getProductId();
+		
+		
 		productDAO.updateProduct(product);
 		
 		Product product1 = new Product();

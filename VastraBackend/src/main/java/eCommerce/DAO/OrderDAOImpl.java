@@ -33,11 +33,11 @@ public class OrderDAOImpl implements OrderDAO
 @Override
   public boolean updateCart(String username)
   {
-	Session session=sessionFactory.openSession();
+	Session session=sessionFactory.getCurrentSession();
 	Query query=session.createQuery("update CartItem set paymentStatus='P' where username=:uname");
 	query.setParameter("uname", username);
 	int row_eff=query.executeUpdate();
-	session.close();
+	
 	if(row_eff>0)
 		return true;
 	else

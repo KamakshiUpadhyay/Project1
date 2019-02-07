@@ -31,10 +31,10 @@ public class CategoryJunitTest
 	public void addCategoryTest() 
 	{
 		Category category = new Category();
-		category.setCategoryName("Shirts");
-		category.setCategoryDesc("All variety of Tshirts");
+		category.setCategoryName("Shorts");
+		category.setCategoryDesc("Prited Shorts for men");
 		
-		assertTrue("Problem in adding Category", categoryDAO.addCategory(category));
+		assertTrue("Problem in Adding Category", categoryDAO.addCategory(category));
 	} 
 	
    @Ignore
@@ -54,7 +54,7 @@ public class CategoryJunitTest
     	assertTrue("Problem in Updating Category", categoryDAO.updateCategory(category));
     }
 	
-    
+	
 	@Test
 	public void listCategoriesTest()
 	{

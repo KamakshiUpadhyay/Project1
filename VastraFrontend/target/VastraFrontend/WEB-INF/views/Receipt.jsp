@@ -12,7 +12,7 @@
     <td>ORDER ID</td>
     <td>ORD000${orderDetail.orderID }</td>
     <td>Date</td>
-    <td colspan="2">${orderDetail.Orderdate}</td>
+    <td colspan="2">${orderDetail.orderDate}</td>
     </tr>
     <tr>
     <td colspan="5"><h3>ORDER ITEMS</h3></td>
@@ -23,16 +23,15 @@
       <td>Quantity</td>
       <td>Price</td>
       <td>SubTotal</td>
-      <td>Operation</td>
     </tr>
     
   <c:forEach items="${cartItemList}" var="cartItem">
        <tr class="info">
-         <td>${cartItem.productId}</td>
+         <td>${cartItem.productid}</td>
          <td>${cartItem.productName}</td>
          <td>${cartItem.quantity}</td>
          <td>${cartItem.price}</td>
-         <td>${cartItem.price} * ${cartItem.quantity}</td>  
+         <td>${cartItem.price * cartItem.quantity}</td>  
        </tr>
   </c:forEach>
   
@@ -47,7 +46,7 @@
     
     <tr class="info">
       <td>Address</td>
-      <td colspan="4"> ${addr} </td>
+      <td colspan="4"> ${orderDetail.shippingAddr} </td>
     </tr>
 
 </table>

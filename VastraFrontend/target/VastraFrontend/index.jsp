@@ -1,7 +1,14 @@
 <%@ page language="java" contentType="text/html"%>
 <%@include file="/WEB-INF/views/Header.jsp" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <html>
+<style>
+  .item{
+     height:300;
+  
+        }
+</style>
 <body>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -15,26 +22,44 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="<c:url value='/resources/images/cover.png'/>"height="250">
+      <img src="<c:url value='/resources/images/cover.png'/>">
       <div class="carousel-caption">
       </div>
     </div>
 
     <div class="item">
-     <img src="<c:url value='/resources/images/myn.jpg'/>"height="250">
+     <img src="<c:url value='/resources/images/myn.jpg'/>">
       <div class="carousel-caption">
       </div>
     </div>
     
     <div class="item">
-      <img src="<c:url value='/resources/images/heels.jpg'/>" height="250">
+      <img src="<c:url value='/resources/images/heels.jpg'/>" >
       <div class="carousel-caption">
         
       </div>
     </div>
 
     <div class="item">
-      <img src="<c:url value='/resources/images/man.jpg'/>" height="250">
+      <img src="<c:url value='/resources/images/man.jpg'/>" >
+      <div class="carousel-caption">
+        </div>
+    </div>
+    
+    <div class="item">
+      <img src="<c:url value='/resources/images/kid.jpg'/>" >
+      <div class="carousel-caption">
+        </div>
+    </div>
+    
+    <div class="item">
+      <img src="<c:url value='/resources/images/jwel.jpg'/>" >
+      <div class="carousel-caption">
+        </div>
+    </div>
+    
+    <div class="item">
+      <img src="<c:url value='/resources/images/kw.jpg'/>" >
       <div class="carousel-caption">
         </div>
     </div>

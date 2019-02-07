@@ -19,13 +19,13 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
            <div class="navbar-header"> 
-               <a class="navbar-brand" href="#"> Vastra </a>
+               <a class="navbar-brand" >Vastra</a>
            </div>
       <c:if test="${!sessionScope.loggedIn}">
            <ul class="nav navbar-nav"> 
              
              <li> <a href="<c:url value='/login'/>"> LOGIN  </a></li>
-             <li> <a href="<c:url value='/register'/>"> REGISTER </a></li>
+            
              <li> <a href="<c:url value='/aboutus'/>"> ABOUT US </a></li>
              <li> <a href="<c:url value='/contactus'/>"> Contact US </a></li>
              </ul>

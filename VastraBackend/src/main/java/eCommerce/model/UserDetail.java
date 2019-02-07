@@ -16,9 +16,18 @@ public class UserDetail
 	String role;
 	boolean enabled;
 	String customerName;
+	String email;
 	String customerAddr;
 	
 	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public String getUserName() 
 	{
 		return userName;

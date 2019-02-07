@@ -31,6 +31,7 @@
 
 <table class="table-bordered">
     <tr>
+      
       <td> Category Id &nbsp</td>
       <td> Category Name &nbsp</td>
       <td> Category Description &nbsp</td>
@@ -39,9 +40,11 @@
     
    <c:forEach items = "${listCategories}" var="category" >
      <tr>
+       
        <td> <center> ${category.categoryId}  </center> </td>
        <td> <center>  ${category.categoryName} </center> </td>
        <td>  <center> ${category.categoryDesc} </center> </td>
+       
        
        <td> <a href="<c:url value="/editCategory/${category.categoryId}"/>" class="btn btn-success"> EDIT </a> </td>
        <td> <a href="<c:url value="/deleteCategory/${category.categoryId}"/>" class="btn btn-danger"> DELETE </a> </td>

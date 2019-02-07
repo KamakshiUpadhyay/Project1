@@ -38,6 +38,10 @@
     
     </td>
   </tr>
+  <tr>
+     <td> Brand </td>
+     <td> <form:input path="brandName" /> </td>
+  </tr>
   
   <tr>
      <td> Supplier </td>
@@ -67,12 +71,14 @@
       <td> Product Name &nbsp</td>
       <td> Price &nbsp</td>
       <td> Stock &nbsp</td>
+      <td> Brand &nbsp</td>
       <td> Supplier &nbsp</td>
       <td> Operations </td>
     </tr>
     
    <c:forEach items = "${productList}" var="product" >
      <tr>
+       <td> <center> ${product.brandName}  </center> </td>  
        <td> <center> ${product.productId}  </center> </td>
        <td> <center>  ${product.productName} </center> </td>
        <td>  <center> ${product.price} </center> </td>

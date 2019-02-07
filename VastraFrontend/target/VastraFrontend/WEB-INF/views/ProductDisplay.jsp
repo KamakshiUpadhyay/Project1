@@ -7,9 +7,10 @@
 
     <div class = "col-sm-4 col-md-3">
       <a href = "<c:url value="/totalProductDisplay/${product.productId}" />" class = "thumbnail">
-         <img src="<c:url value="/resources/images/${product.productId}.png" />" alt = "Generic placeholder thumbnail">
+      <img src="<c:url value="/resources/images/${product.productId}.png"/>" style="min-height:250px; max-height:250px;" alt = "Generic placeholder thumbnail">
       </a>
       
+      <p aling="center"> ${product.BrandName }</p>
       <p align="center"> ${product.productName} </p>
       <p align="center"> Price : INR ${product.price}/- </p>
       <p align="center"> Stock : ${product.stock} </p>

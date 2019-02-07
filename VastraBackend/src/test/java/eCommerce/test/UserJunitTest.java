@@ -24,7 +24,7 @@ public class UserJunitTest
 	}
 
 	@Test
-	
+	@Ignore
 	public void registerUserTest() 
 	{
 		UserDetail user = new UserDetail();

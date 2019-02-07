@@ -8,13 +8,16 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import eCommerce.DAO.ProductDAO;
+import eCommerce.DAO.UserDAO;
 import eCommerce.model.Product;
+import eCommerce.model.UserDetail;
 
 @Controller
 public class PageController 
 {
 	@Autowired
 	ProductDAO productDAO;
+	
 	@RequestMapping("/login")
 		public String showLogin(Model m)
 		{
@@ -30,9 +33,11 @@ public class PageController
 		return "AdminHome";
 	}
 	 
+	
     @RequestMapping("/register")
 		public String showRegister(Model m)
 		{
+    		m.addAttribute("user", new UserDetail());
     	    m.addAttribute("pageinfo" , "Register");
 			return "Register";
 		}

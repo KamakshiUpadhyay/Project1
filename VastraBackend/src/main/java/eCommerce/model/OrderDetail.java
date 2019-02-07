@@ -18,65 +18,50 @@ public class OrderDetail
   int TotalAmount;
   
   String username;
-  Date Orderdate;
-  String ShippingAddr;
+  Date orderDate;
+  String shippingAddr;
   String Trans;
   
-  
-public int getOrderID() 
-{
+public int getOrderID() {
 	return orderID;
 }
-public void setOrderID(int orderID) 
-{
+public void setOrderID(int orderID) {
 	this.orderID = orderID;
 }
-public int getCardID() 
-{
+public int getCardID() {
 	return cardID;
 }
-public void setCardID(int cardID) 
-{
+public void setCardID(int cardID) {
 	this.cardID = cardID;
 }
-public int getTotalAmount() 
-{
+public int getTotalAmount() {
 	return TotalAmount;
 }
-public void setTotalAmount(int totalAmount) 
-{
+public void setTotalAmount(int totalAmount) {
 	TotalAmount = totalAmount;
 }
-public String getUsername() 
-{
+public String getUsername() {
 	return username;
 }
-public void setUsername(String username) 
-{
+public void setUsername(String username) {
 	this.username = username;
 }
-public Date getOrderdate() 
-{
-	return Orderdate;
+public Date getOrderDate() {
+	return orderDate;
 }
-public void setOrderdate(Date orderdate) 
-{
-	Orderdate = orderdate;
+public void setOrderDate(Date orderDate) {
+	this.orderDate = orderDate;
 }
-public String getShippingAddr() 
-{
-	return ShippingAddr;
+public String getShippingAddr() {
+	return shippingAddr;
 }
-public void setShippingAddr(String shippingAddr) 
-{
-	ShippingAddr = shippingAddr;
+public void setShippingAddr(String shippingAddr) {
+	this.shippingAddr = shippingAddr;
 }
-public String getTrans() 
-{
+public String getTrans() {
 	return Trans;
 }
-public void setTrans(String trans) 
-{
+public void setTrans(String trans) {
 	Trans = trans;
 }
   

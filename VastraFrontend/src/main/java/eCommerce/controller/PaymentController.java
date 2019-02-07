@@ -88,7 +88,7 @@ public class PaymentController
 	  String username=(String)session.getAttribute("username");
 	  
 	  OrderDetail orderDetail=new OrderDetail();
-	  orderDetail.setOrderdate(new Date());
+	  orderDetail.setOrderDate(new java.util.Date());
 	  orderDetail.setShippingAddr(userDAO.getUser(username).getCustomerAddr());
 	  orderDetail.setTrans(rd);
 	  orderDetail.setUsername(username);
