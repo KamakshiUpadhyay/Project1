@@ -42,7 +42,10 @@ public class UserController
 	}
 	
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
-	public String addUser(@ModelAttribute("user")UserDetail userDetail, Model model) {
+	public String addUser(@ModelAttribute("user")UserDetail userDetail, Model model) 
+	{
+		userDetail.setEnabled(true);
+		userDetail.setRole("ROLE_USER");
 		userDAO.registerUser(userDetail);
 		return "msg";
 	}

@@ -12,7 +12,7 @@
     <div class="container">
 	  <div class="row main">
 		 <div class="main-login main-center">
-			<h5> Sign up </h5>
+			<h5> Sign Up </h5>
 			<c:url var="add" value="/addUser"/>
 				<form:form method="post" action="${add}" modelAttribute="user">
 						
@@ -32,6 +32,16 @@
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
 								<form:input path="email" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+					  <label for="address" class="cols-sm-2 control-label">Your Address</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+								<form:input path="customerAddr" />
 							</div>
 						</div>
 					</div>

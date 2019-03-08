@@ -10,8 +10,7 @@
 		width:40%;
 		height:auto;
 		border:solid 1px;
-		border-radius: 10px;
-		
+		border-radius: 10px;	
 	}
 </style>
 <body style="background-image: url('<c:url value='resources/images/shop.gif'/>')">
@@ -31,7 +30,7 @@
    
   <tr bgcolor="pink">
     <td> PASSWORD </td>
-    <td> <input type="password" name="password" required/></td>
+    <td> <input type="password" name="password" required/> </td>
   </tr>
   
   <tr bgcolor="gray">
@@ -41,8 +40,6 @@
 </table>
    <center><b>Don't have an Account ?</b> <a href="<c:url value='/register'/>"> SIGN UP</a></center>          
   
-
-
 </div>
 </div>
 </body>

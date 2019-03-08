@@ -31,8 +31,8 @@ public class CategoryJunitTest
 	public void addCategoryTest() 
 	{
 		Category category = new Category();
-		category.setCategoryName("Shorts");
-		category.setCategoryDesc("Prited Shorts for men");
+		category.setCategoryName("Cardigan");
+		category.setCategoryDesc("Prited cardigan for women");
 		
 		assertTrue("Problem in Adding Category", categoryDAO.addCategory(category));
 	} 

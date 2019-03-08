@@ -19,7 +19,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
            <div class="navbar-header"> 
-               <a class="navbar-brand" >Vastra</a>
+               <img src="<c:url value='/resources/images/vas.gif'/>" width="60" height="60">
            </div>
       <c:if test="${!sessionScope.loggedIn}">
            <ul class="nav navbar-nav"> 

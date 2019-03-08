@@ -7,6 +7,6 @@
 <title>Registration Completed</title>
 </head>
 <body>
-	<img src="<c:url value='/resources/images/welcome.jpg'/>">
+	<img src="<c:url value='/resources/images/welcome.jpg'/>" alt="HTML5 Icon" style="min-width:100%; max-width:100%;max-height:350px;">
 </body>
 </html>

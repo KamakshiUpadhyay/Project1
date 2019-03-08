@@ -13,13 +13,13 @@ public class Category {
 	@Id
 	@GeneratedValue
 	
-	
+	int categoryId;
 	
 	String categoryName;
 	String CategoryDesc;
 	String BrandName;
 	
-	int categoryId;
+	
 	public String getBrandName() {
 		return BrandName;
 	}
